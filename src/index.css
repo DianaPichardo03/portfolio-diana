@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#0f0f0f;
+  color:white;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+a:hover{
+  color:#c9a227;
+}
+
+button{
+  cursor:pointer;
+}
+
+html { 
+  scroll-behavior: smooth;
+}
