@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaReact } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -45,6 +46,15 @@ function Contact() {
         📍 Iguala, Guerrero
       </p>
 
+         <div
+            style={{
+              display: "flex",
+              gap: 15,
+              justifyContent: "center",
+              marginTop: 20,
+              flexWrap: "wrap",
+            }}
+          ></div>
 
       <a
         href="https://github.com/DianaPichardo03"
@@ -72,6 +82,35 @@ function Contact() {
           GitHub <FaGithub />
         </button>
       </a>
+
+      
+      <a
+        href="www.linkedin.com/in/diana-pichardo-g03"
+        target="_blank"
+      >
+        <button
+          style={{
+            padding: "12px 25px",
+            border: "none",
+            borderRadius: 30,
+            background: "#00eeffe5",
+            color: "black",
+            fontWeight: "bold",
+            fontSize: 16,
+            transition: "0.3s",
+            cursor: "pointer",
+          }}
+          onMouseOver={(e) => { 
+            e.currentTarget.style.transform = "scale(1.1)"; 
+          }} 
+          onMouseOut={(e) => { 
+            e.currentTarget.style.transform = "scale(1)"; 
+          }}
+        >
+          LinkedIn <FaLinkedin />
+        </button>
+      </a>
+
        <div
       style={{
         display: "flex",
