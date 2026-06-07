@@ -48,9 +48,9 @@ function Contact() {
          <div
             style={{
               display: "flex",
-              gap: 15,
+              gap: 25,
               justifyContent: "center",
-              marginTop: 20,
+              marginTop: 30,
               flexWrap: "wrap",
             }}
           ></div>
