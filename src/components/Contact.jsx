@@ -106,7 +106,7 @@ function Contact() {
             e.currentTarget.style.transform = "scale(1)"; 
           }}
         >
-          Ver CV 🗎
+          Ver CV 👁
         </button>
       </a>
 
