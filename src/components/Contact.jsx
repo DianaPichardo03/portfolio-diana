@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin, FaReact } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -85,7 +84,7 @@ function Contact() {
 
       
       <a
-        href="www.linkedin.com/in/diana-pichardo-g03"
+        href="https://www.linkedin.com/in/diana-pichardo-g03"
         target="_blank"
       >
         <button
