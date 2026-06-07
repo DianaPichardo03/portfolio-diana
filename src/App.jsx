@@ -23,7 +23,7 @@ function App() {
       >
         <h1
           style={{
-            fontSize: "60px",
+            fontSize:"clamp(35px, 8vw, 60px)",
             marginBottom: 20,
           }}
         >
@@ -32,7 +32,7 @@ function App() {
 
         <p
           style={{
-            fontSize: "24px",
+            fontSize: "clamp(18px, 4vw, 24px)",
             color: "#aaa",
             maxWidth: 700,
           }}
@@ -78,6 +78,17 @@ function App() {
       <section id="contacto">
         <Contact />
       </section>
+      <footer 
+      style={{ 
+        textAlign: "center", 
+        padding: 20, 
+        color: "#888", 
+        borderTop: "1px solid #333", 
+        marginTop: 50, 
+        }} 
+        > 
+        © 2026 Diana Laura Pichardo García 
+        </footer>
     </div>
   );
 }
