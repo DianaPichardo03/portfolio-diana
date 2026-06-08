@@ -48,12 +48,12 @@ function Contact() {
          <div
             style={{
               display: "flex",
-              gap: 30,
+              gap: 25,
               justifyContent: "center",
-              marginTop: 35,
+              marginTop: 30,
               flexWrap: "wrap",
             }}
-          ></div>
+          >
 
       <a
         href="https://github.com/DianaPichardo03"
@@ -119,7 +119,7 @@ function Contact() {
         flexWrap: "wrap",
       }}
     >
-      
+    </div>
       <a
         href="/cv.pdf"
         target="_blank"
