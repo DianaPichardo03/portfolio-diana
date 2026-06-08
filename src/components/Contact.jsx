@@ -109,6 +109,7 @@ function Contact() {
           LinkedIn <FaLinkedin />
         </button>
       </a>
+      </div>
 
        <div
       style={{
@@ -119,7 +120,7 @@ function Contact() {
         flexWrap: "wrap",
       }}
     >
-    </div>
+    
       <a
         href="/cv.pdf"
         target="_blank"
