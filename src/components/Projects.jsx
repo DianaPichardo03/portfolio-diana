@@ -54,7 +54,7 @@ function Projects() {
           descripcion="Sistema CRUD de tareas con autenticación JWT y base de datos MySQL."
           tecnologias="JavaScript • Node • JWT • MySQL • Vercel"
           demo="https://frontend-tareas-eight.vercel.app/"
-          github="https://github.com/DianaPichardo03/frontend-tareas"
+          github="https://github.com/DianaPichardo03/backend-todo"
         />
       </div>
     </section>
