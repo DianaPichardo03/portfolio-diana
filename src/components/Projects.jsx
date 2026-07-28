@@ -1,3 +1,9 @@
+import ProjectCard from "./ProjectCard";
+
+import joyeriaReact from "../assets/joyeria-react.png";
+import joyeriaPhp from "../assets/joyeria-php.png";
+import tareas from "../assets/tareas.png";
+
 function Projects() {
   return (
     <section
@@ -9,8 +15,8 @@ function Projects() {
       <h2
         style={{
           textAlign: "center",
-          fontSize: "clamp(28px, 6vw, 40px)",
-          marginBottom: "50px",
+          fontSize: "clamp(28px,6vw,40px)",
+          marginBottom: 50,
         }}
       >
         Mis Proyectos
@@ -24,63 +30,32 @@ function Projects() {
           justifyContent: "center",
         }}
       >
-        <a href="https://proyecto-joyeria.vercel.app/" 
-        target="_blank" 
-        style={{ 
-          textDecoration: "none", 
-          color: "white", }} >
-        <div
-          style={{
-            width: 300,
-            background: "#1e1e1e",
-            padding: 20,
-            borderRadius: 20,
-            transition: "0.3s", 
-            cursor: "pointer", 
-            }} 
-            onMouseOver={(e) => { 
-              e.currentTarget.style.transform = "scale(1.2)"; 
-              }} 
-              onMouseOut={(e) => { 
-                e.currentTarget.style.transform = "scale(1)"; 
-                }} >
+        <ProjectCard
+          imagen={joyeriaPhp}
+          titulo="💎 Joyería Diana"
+          descripcion="Ecommerce desarrollado con PHP, PostgreSQL, Aiven, Cloudinary y Render. Incluye panel de administración, carrito de compras y gestión de pedidos."
+          tecnologias="PHP • PostgreSQL • Cloudinary • Render"
+          demo="https://joyeria-diana.onrender.com"
+          github="https://github.com/DianaPichardo03/Joyeria-Diana"
+        />
 
-          <h3>💎 Ecommerce Joyería</h3>
+        <ProjectCard
+          imagen={joyeriaReact}
+          titulo="💎 Ecommerce Joyería"
+          descripcion="Ecommerce fullstack desarrollado con React, Node.js, Express y MySQL."
+          tecnologias="React • Node • Express • MySQL • Vercel"
+          demo="https://proyecto-joyeria.vercel.app/"
+          github="https://github.com/DianaPichardo03/Proyecto-Joyeria"
+        />
 
-          <p style={{ marginTop: 10, color: "#aaa" }}>
-            Ecommerce fullstack con React, Node.js,
-            Express y MySQL.
-          </p>
-           </div>
-          </a>
-          <a href="https://frontend-tareas-eight.vercel.app/" 
-          target="_blank" 
-          style={{ 
-            textDecoration: "none", 
-            color: "white", 
-            }} >
-        <div
-          style={{
-            width: 300,
-            background: "#1e1e1e",
-            padding: 20,
-            borderRadius: 20,
-            transition: "0.3s", 
-            cursor: "pointer", 
-            }} 
-            onMouseOver={(e) => { 
-              e.currentTarget.style.transform = "scale(1.2)"; 
-              }} 
-              onMouseOut={(e) => { 
-                e.currentTarget.style.transform = "scale(1)"; 
-                }} >
-          <h3>📝 Tareas Fullstack</h3>
-
-          <p style={{ marginTop: 10, color: "#aaa" }}>
-            CRUD de tareas con JWT, MySQL y JavaScript.
-          </p>
-        </div>
-        </a>
+        <ProjectCard
+          imagen={tareas}
+          titulo="📝 Tareas Fullstack"
+          descripcion="Sistema CRUD de tareas con autenticación JWT y base de datos MySQL."
+          tecnologias="JavaScript • Node • JWT • MySQL • Vercel"
+          demo="https://frontend-tareas-eight.vercel.app/"
+          github="AQUI_TU_REPOSITORIO"
+        />
       </div>
     </section>
   );

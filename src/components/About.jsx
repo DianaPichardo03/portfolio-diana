@@ -24,7 +24,17 @@ function About() {
       >
         Sobre mí ☺
       </h2>
-
+         <p
+            style={{
+              textAlign: "center",
+              color: "#00eeffe5",
+              fontWeight: "bold",
+              marginBottom: 40,
+              fontSize: "clamp(18px,3vw,22px)",
+            }}
+          >
+            Desarrolladora Fullstack | React • Node.js • PHP • PostgreSQL • Cloud Computing
+          </p>
       <div
         style={{
           display: "flex",
@@ -71,9 +81,10 @@ function About() {
         </p>
 
         <p>
-          Me gusta crear aplicaciones modernas,
-          funcionales y seguir desarrollando nuevas
-          habilidades tecnológicas.
+          Me gusta crear aplicaciones modernas, escalables 
+          y funcionales, manteniéndome en constante aprendizaje 
+          para incorporar nuevas tecnologías y buenas prácticas 
+          de desarrollo.
         </p>
 
         <p>
@@ -85,9 +96,12 @@ function About() {
         </p>
 
         <p>
-          Actualmente continúo fortaleciendo mis conocimientos 
-          en desarrollo fullstack y desarrollando proyectos 
-          personales.
+          Actualmente desarrollo aplicaciones fullstack
+          utilizando React, Node.js, PHP y PostgreSQL,
+          desplegando proyectos reales con tecnologías
+          cloud como Render, Vercel, Aiven y Cloudinary,
+          siempre buscando escribir código limpio,
+          escalable y mantenible.
         </p>
         <p>
           Tengo disponibilidad para cambio de
@@ -95,38 +109,155 @@ function About() {
           profesionalmente en el área de tecnología.
         </p>
         <p>
+          Mi objetivo es formar parte de un equipo donde pueda aportar
+          soluciones, seguir aprendiendo y crecer profesionalmente
+          desarrollando software de calidad.
+        </p>
+        <p>
           También disfruto actividades como el ciclismo 
           y la natación, ya que me ayudan a mantener 
           disciplina, constancia y equilibrio personal.
         </p>
       </div>
-
-      {/* FOTO COMPUTADORA */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: 60,
-        }}
-      >
-        <img
-          src={compu}
-          alt="Programando"
+        <div
           style={{
-            width: "100%", 
-            maxWidth: 400,
-            borderRadius: 20,
-            transition: "0.3s ease",
-            boxShadow: "0 0 20px rgba(0,0,0,0.5)",
+            marginTop: 70,
+            textAlign: "center",
           }}
-            onMouseOver={(e) => { 
-              e.currentTarget.style.transform = "scale(1.05)"; 
-        }} 
-            onMouseOut={(e) => { 
-                e.currentTarget.style.transform = "scale(1)"; 
+        >
+          <h3
+            style={{
+              color: "#00eeffe5",
+              marginBottom: 25,
+              fontSize: "clamp(22px,4vw,28px)",
             }}
-        />
+          >
+            Especialidades
+          </h3>
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: 18,
+              flexWrap: "wrap",
+              maxWidth: 900,
+              margin: "0 auto",
+            }}
+          >
+            {[
+              "💻 Desarrollo Frontend",
+              "⚙️ Desarrollo Backend",
+              "🔗 APIs REST",
+              "🗄️ Bases de Datos",
+              "🛒 Ecommerce",
+              "☁️ Cloud Computing",
+              "🚀 Deploy en la nube",
+            ].map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  background: "#1e1e1e",
+                  border: "2px solid #00eeffe5",
+                  borderRadius: 30,
+                  padding: "12px 20px",
+                  color: "white",
+                  fontWeight: "bold",
+                  transition: "0.3s",
+                  cursor: "default",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 0 15px rgba(0,238,255,.4)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "none";
+                }}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+  
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: 50,
+        flexWrap: "wrap",
+        marginTop: 60,
+        marginBottom: 50,
+        textAlign: "center",
+      }}
+    >
+      <div>
+        <h2
+          style={{
+            color: "#00eeffe5",
+            fontSize: "clamp(30px,5vw,42px)",
+            marginBottom: 5,
+          }}
+        >
+          3+
+        </h2>
+        <p>Proyectos Fullstack</p>
       </div>
+
+      <div>
+        <h2
+          style={{
+            color: "#00eeffe5",
+            fontSize: "clamp(30px,5vw,42px)",
+            marginBottom: 5,
+          }}
+        >
+          15+
+        </h2>
+        <p>Tecnologías dominadas</p>
+      </div>
+
+      <div>
+        <h2
+          style={{
+            color: "#00eeffe5",
+            fontSize: "clamp(30px,5vw,42px)",
+            marginBottom: 5,
+          }}
+        >
+          100%
+        </h2>
+        <p>Aprendizaje continuo</p>
+      </div>
+    </div>
+
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        marginBottom: 30,
+      }}
+    >
+      <img
+        src={compu}
+        alt="Programando"
+        style={{
+          width: "100%",
+          maxWidth: 420,
+          borderRadius: 20,
+          transition: "0.3s ease",
+          boxShadow: "0 0 20px rgba(0,0,0,0.5)",
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.transform = "scale(1.05)";
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.transform = "scale(1)";
+        }}
+      />
+    </div>
 
     <h3
     style={{
@@ -136,7 +267,7 @@ function About() {
         fontSize: "clamp(24px, 5vw, 32px)",
     }}
     >
-    Hobbies 
+    Más allá del código 
     <br />
     🚴‍♀️🏊‍♀️
     </h3>
@@ -223,7 +354,7 @@ function About() {
         </video>
 
         <p style={{ textAlign: "center" }}>
-        Actividad ☺
+        Momentos que disfruto ☺
         </p>
     </div>
     </div>
