@@ -87,7 +87,7 @@ function App() {
         marginTop: 50, 
         }} 
         > 
-        © 2026 Diana Laura Pichardo García 
+        2026 Diana Laura Pichardo García 
         </footer>
     </div>
   );
